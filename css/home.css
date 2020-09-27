@@ -25,8 +25,22 @@ html{
 
   /* 3 Layout */
 div.Assignment{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 30%;
+	background-color: hsl(46, 100%, 76%);
+}
+
+div.Introduction{
+	float: left;
+	width: 60%;
+}
+
+img{
 	float: right;
-	width: 50%;
+	width: 30%;
+	height: 200px;
 }
 
   /* 4 Other Decorations */
