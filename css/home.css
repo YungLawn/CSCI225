@@ -24,13 +24,10 @@ html{
   /* 2 Typography */
 
   /* 3 Layout */
-
-  aside.Assignment{
-	position: absolute;
-	top: 3%;
-	right:0;
-	width: 27%;
-  }
+div.Assignment{
+	float: right;
+	width: 50%;
+}
 
   /* 4 Other Decorations */
 
