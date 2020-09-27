@@ -25,6 +25,13 @@ html{
 
   /* 3 Layout */
 
+  aside.Assignment{
+	position: absolute;
+	top: 3%;
+	right:0;
+	width: 27%;
+  }
+
   /* 4 Other Decorations */
 
   /* 5 Media Queries */
