@@ -14,48 +14,301 @@
 	================================================
 	*/
 
-    /* 1 Color */
+	/* 1 Color */
+	html{
+		background: repeating-linear-gradient(127deg, rgb(0,191,255), rgb(230,230,250), rgb(135,206,235),
+		rgb(230,230,250), rgb(0,191,255));
+		
+	}
 
-html{
-    background-color: hsla(190, 82%, 40%, 0.5);
-    padding: 5%;
-  }
+	div.navbar{
+		background: repeating-linear-gradient(70deg, rgb(0,191,255), rgb(230,230,250), rgb(0,191,255));
+	}
+	
+	/* 2 Typography */
 
-  /* 2 Typography */
+	div.Introduction{
+		font-size: larger;
+	}
+	div.Assignment{
+		font-size: larger;
+	}
 
-  /* 3 Layout */
-div.Assignment{
-	position: absolute;
-	top: 0;
-	right: 0;
-	width: 30%;
-	height: 100%;
-	background-color: hsl(46, 100%, 76%);
-}
+	div.Portfolio{
+		font-size: larger;
+	}
 
-div.Introduction{
-	position: fixed;
-	float: left;
-	width: 60%;
-}
+	div.Contact{
+		font-size: larger;
+	}
 
-div.Portfolio{
+	div.Schedule{
+		font-size: larger;
+	}
 
-}
+	html{
+		font-family: 'Sansita Swashed', cursive;
+	}
 
-div.navbar{
-	position: fixed;
-	top:0;
 
-}
+	/* 3 Layout */
 
-img{
-	float: right;
-	width: 30%;
-	height: 200px;
-}
+	div.navbar{
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		display:inline-block;
+	}
 
-  /* 4 Other Decorations */
+	#navtable ul li{
+		display: inline-block;
+		padding-left: 140px;
+		padding-right: 120px;
+	}
 
-  /* 5 Media Queries */
+	div.Introduction{
+		position: absolute;
+		top:40%;
+		left:48%;
+		margin-top: -150px;
+		margin-left: -300px;
+		visibility: hidden;
+	}
+
+	div.Introduction:hover{
+		visibility: visible;
+		transform: translate(3px,3px)
+	}
+
+	div.Introduction img{
+		position: absolute;
+		left: 27%;
+	}
+
+	div.Introduction h1{
+		position: absolute;
+		visibility: visible;
+		top: -17%;
+		left: -53%;
+	}
+
+	div.Assignment{
+		position: absolute;
+		top:60%;
+		left:60%;
+		width: 600px;
+		height: 300px;
+		margin-top: -150px;
+		margin-left: -300px;
+		visibility: hidden;
+	}
+
+	div.Assignment:hover{
+		visibility: visible;
+		transform: translate(3px,3px)
+	}
+
+	div.Assignment h1{
+		position: absolute;
+		visibility: visible;
+		top: 210%;
+		right: -330%;
+	}
+
+	div.Portfolio{
+		position: absolute;
+		top:50%;
+		left:50%;
+		margin-top: -150px;
+		margin-left: -300px;
+		visibility: hidden;
+	}
+
+	div.Portfolio:hover{
+		visibility: visible;
+		transform: translate(3px,3px)
+	}
+
+	div.Portfolio h1{
+		position: absolute;
+		visibility: visible;
+		top: -10%;
+		right: -50%;
+	}
+
+	div.Contact{
+		position: absolute;
+		top:60%;
+		left:57%;
+		margin-top: -150px;
+		margin-left: -300px;
+		visibility: hidden;
+	}
+
+	div.Contact:hover{
+		visibility: visible;
+		transform: translate(3px,3px)
+	}
+
+	div.Contact h1{
+		position: absolute;
+		visibility: visible;
+		top: 350%;
+		left: -167%;
+	}
+
+	div.Schedule{
+		position: absolute;
+		top:50%;
+		left:52%;
+		margin-top: -150px;
+		margin-left: -300px;
+		visibility: hidden;
+	}
+
+	div.Schedule:hover{
+		visibility: visible;
+		transform: translate(3px,3px)
+	}
+
+	div.Schedule h1{
+		position: absolute;
+		visibility: visible;
+		top: 30%;
+		left: -72%;
+	}
+
+	footer{
+		position: absolute;
+		bottom:0%;
+		left:45%;
+	}
+
+	/* 4 Other Decorations */
+
+	div.Introduction h1{
+		border-radius: 50px 20px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:240px;
+		height:50px;
+		text-align: center;
+	}
+
+	div.Introduction{
+		border-radius: 50px 50px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:650px;
+		height:250px;
+	}
+
+	div.Introduction p{
+		padding-left: 20px;
+		padding-right: 10px;
+	}
+
+	div.Introduction img{
+		width: 300px;
+		height: 300px;
+		border-radius: 0px 0px 100px 100px;
+		background-color: rgb(240,234,213);
+		padding-bottom: 10px;
+	}
+
+
+	div.Portfolio h1{
+		border-radius: 20px 50px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:190px;
+		height:50px;
+		text-align: center;
+	}
+
+	div.Portfolio{
+		border-radius: 50px 50px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:600px;
+		height:330px;
+		padding-right: 10px;
+	}
+
+	div.Schedule h1{
+		border-radius: 50px 20px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:190px;
+		height:50px;
+		text-align: center;
+	}
+
+	div.Schedule{
+		border-radius: 50px 50px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:550px;
+		height:420px;
+		padding-left: 20px;
+		padding-top: 10px;
+	}
+
+	#tbl tr th, td{
+		border: 1px solid black;
+		padding: 3px;
+		text-align: center;
+		border-radius: 5px;
+	}
+
+	div.Contact h1{
+		border-radius: 50px 20px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:240px;
+		height:100px;
+		text-align: center;
+	}
+
+	div.Contact{
+		border-radius: 50px 50px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:330px;
+		height:70px;
+		padding-bottom: 20px;
+	}
+
+	div.Assignment h1{
+		border-radius: 20px 50px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:240px;
+		height:50px;
+		text-align: center;
+	}
+
+	div.Assignment{
+		border-radius: 50px 50px;
+		background-color: rgb(240,234,213);
+		box-shadow: -7px -7px 7px dimgray;
+		width:180px;
+		height:70px;
+		padding-bottom: 20px;
+	}
+
+	div.navbar ul li a{
+		background-color: aqua;
+		border: 2px solid skyblue;
+		border-radius: 50px;
+		padding: 5px;
+		box-shadow: -4px -4px 4px dimgray;
+	}
+
+	div.navbar{
+		border: 2px solid deepskyblue
+	}
+
+	/* 5 Media Queries */
 

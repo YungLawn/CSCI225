@@ -2,22 +2,29 @@
 
 <html lang="en">
 
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap');
+    </style>
+
     <head><title>CSCI225 Homepage of Chris Teelon</title> 
         <link rel="stylesheet" href="css/home.css">
 
-<body>  
+<body> 
 
+<div class="wrapper">
     <div class="navbar">
-    <ul>
-        <li><a href=https://www.usca.edu/>Visit USCA.edu </a></li>
-        <li><a href="#Assignment">Assignments</a></li>
-        <li><a href="#ContactInformation">Contact Information</a></li>
-        <li><a href="#Schedule">Schedule</a></li>
-        <li><a href="#Portfolio">Portfolio</a></li>
-    </ul>
+        <div class="table" id="navtable">
+            <ul id="navlist">
+                <li><a href=https://www.usca.edu/>Visit USCA.edu </a></li>
+                <li><a href="#Assignment">Assignments</a></li>
+                <li><a href="#ContactInformation">Contact Information</a></li>
+                <li><a href="#Schedule">Schedule</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+            </ul>
+        </div>
     </div>
 
-    <div class= "Introduction">
+    <div class= "Introduction" id="Introduction">
         <h1>Introduction</h1>
         <p> My name is Chris Teelon and I'm a sophomore at USC Aiken. My Major is Applied Computer Science with a concentration in 
             cyber security. I enjoy playing video games, watching TV, playing with my dog, and sleeping. Some of my other passions are
@@ -26,7 +33,7 @@
             web programming and design. I hope to become proficient in web design so that maybe I can one day turn it into a side job for
             myself. I think this would be a very fun and rewarding way to suppliment my income as I get older. </p>
 
-        <img src="img/HTMLLOGO.png" alt="Picture">
+            <img src="img/HTMLLOGO.png" alt="Picture">
     </div>
 
     <div class="Assignment">
@@ -66,22 +73,23 @@
     </div>
 
     <address>
-        <a id="ContactInformation"></a>
-        <p>Contact Information</p>
-        <ul>
-            <li> <a href="mailto:cteelon@usca.edu">cteelon@usca.edu</a></li>
-            <li>Phone Number: (803)-123-4567</li>
-        </ul>
-        
+        <div class="Contact">
+            <a id="ContactInformation"></a>
+            <h1>Contact Information</h1>
+            <ul>
+                <li> <a href="mailto:cteelon@usca.edu">cteelon@usca.edu</a></li>
+                <li>Phone Number: (803)-123-4567</li>
+            </ul>
+        </div>
     </address>
 
     <div class="Schedule">
         <a id="Schedule"></a>
         <h1>Schedule</h1>
 
-        <table width="500" border="1px" cellpadding="10px">
+        <table id="tbl">
             <tr>
-                <th id="top"></th>
+                <th id="top" style="border: 0px;"></th>
                 <th id="mon">Monday</th>
                 <th id="tues">Tuesday</th>
                 <th id="wed">Wednesday</th>
@@ -141,6 +149,10 @@
 
     </div>
 
+</div>
 </body>
+
+<footer> <p> This Page is copyright of Chris Teelon &copy; </p></footer>
+
 
 </html>
