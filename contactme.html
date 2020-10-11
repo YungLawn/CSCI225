@@ -1,52 +1,112 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
-<head><title>Assignment #2</title></head>
+<head><title>Assignment #2</title>
+    <link rel="stylesheet" href="css/contactme.css">
+
+    <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
 <body>
-<video src="video/puppy.mp4" width="400" height="300" controls> </video>
-
-    <form name="feedback">
-        <label for="fname">First Name:</label>
-            <input type="text" name="fname" placeholder="anonymous" id="fname" required><br>
-        <label for="lname">Last Name:</label> 
-            <input type="text" name="lname" placeholder="anonymous" id="lname" required><br>
-        <label for="mail">Email Address:</label>
-            <input type="email" name = "mail" placeholder = "name@domain.com" id="mail"><br>
-
-        <label for="yes">Would you recommend this website?</label>
-            <input type="radio" name="yes" value="yes" id="yes"> Yes
-            <input type="radio" name="no" value="no"> No 
-                                <br><br>
-
-            <label for="website">Select your Favorite Website: </label>
-            <select name="website" id=website>
-                <option value="Google">Google</option>
-                <option value="FaceBook">FaceBook</option>
-                <option value="Twitter">Twitter</option>
-                <option value="Time">Time</option>
-                <option value="Youtube">Youtube</option>
-            </select> <br><br>
-
-            <label for="rate">Rate this website from 1-10</label>
-                <input type="range" name="rate" id="rate" min="1" max="10"><br><br>
+    <div class="p-3 mb-2 bg-success text-white">
+        <nav class="navbar navbar-expand-lg">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="font-weight-bold">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                        <a class="nav-link" href="https://www.usca.edu/">Visit USCA.edu </a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html#Assignment">Assignments</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html#ContactInformation">Contact Information</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#Schedule">Schedule</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="index.html#Portfolio">Portfolio</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </nav>
+    </div>
+    <div class="Container">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm">
+                      <p>Check out this cute dog:</p>
+                    <video src="video/puppy.mp4" width="900" height="500" controls id="vid" style="border-radius: 30%;"> </video>
+                </div>
+                <div class="col-sm">
+                <form name="feedback">
+                    <div class="form-inline">
+                        <label class="form-check-label" for="fname">First Name:</label>
+                            <input class="form-control" type="text" name="fname" placeholder="anonymous" id="fname" required>   
+                        <label class="form-check-label" for="lname">Last Name:</label> 
+                            <input class="form-control" type="text" name="lname" placeholder="anonymous" id="lname" required>    
+                    </div>
+                    <div class="form-control-block">
+                        <label class="form-check-label" for="mail">Email Address:</label>
+                            <input class="form-control" type="email" name = "mail" placeholder = "name@domain.com" id="mail">    
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <label class="form-check-label" for="recommend">Would you recommend this website?</label>
+                            <input class="form-check-input" type="radio" name="recommend value="yes" id="recommend"> Yes
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="recommend" value="no"> No 
+                    </div>
+                            
+                    <div class="form-control-block">
+                        <label class="form-check-label" for="website">Select your Favorite Website: </label>
+                        <select class="form-control" name="website" id=website>
+                            <option value="Google">Google</option>
+                            <option value="FaceBook">FaceBook</option>
+                            <option value="Twitter">Twitter</option>
+                            <option value="Time">Time</option>
+                            <option value="Youtube">Youtube</option>
+                        </select>         
+                    </div>
             
-            <label for="comment">Enter any additional comments: </label><br>
-                <textarea name="comment" id="comment" cols="30" rows="5"></textarea> <br>
-
-            <button><img src="img/pressme.png" alt="press me" width="195" height="135"></button> <br>
-
-            <label for="color">Select a Color: </label>    
-                <input type="color" name="color" id="color"> <br><br>
+                    <div class="form-group">
+                        <label class="form-check-label" for="rate">Rate this website from 1-10</label>
+                            <input class="form-control-range" type="range" name="rate" id="rate" min="1" max="10">        
+                    </div>    
+                    <div class="form-control-block">
+                        <label class="form-check-label" for="comment">Enter any additional comments: </label>    
+                            <textarea class="form-control" name="comment" id="comment" cols="30" rows="5"></textarea>     
+                    </div>
+                    <div class="form-control-block">
+                        <button><img src="img/pressme.png" alt="press me" width="195" height="135"></button>     
+                    </div>
+                    <div class="form-control-block">
+                        <label class="form-check-label" for="color">Select a Color: </label>    
+                            <input class="form-control" type="color" name="color" id="color">         
+                    </div>    
+                    <div class="form-control-block">
+                        <label class="form-check-label" for="number">Enter any Number: </label>
+                            <input class="form-control" type="number" name="number" id="number">         
+                    </div>
             
-            <label for="number">Enter any Number: </label>
-                <input type="number" name="number" id="number"> <br><br>
-
-
-                <input type="submit" name="submit" id="submit">
-        
-    </form>
+                            <input type="submit" name="submit" id="submit">
+                    
+                </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
