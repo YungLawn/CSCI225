@@ -102,7 +102,7 @@
 		height: 300px;
 		margin-top: -150px;
 		margin-left: -300px;
-		visibility: visible;
+		/* visibility: visible; */
 	}
 
 	div.Assignment:hover{
