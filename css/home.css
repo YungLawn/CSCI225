@@ -106,7 +106,7 @@
 	}
 
 	div.Assignment:hover{
-		visibility: visible;
+		/* visibility: visible; */
 		transform: translate(3px,3px)
 	}
 
