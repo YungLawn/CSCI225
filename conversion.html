@@ -5,6 +5,27 @@
 <head><title>Unit Converter</title></head>
 
 <body>
+
+    <h1>Unit Conversion Calculator - Length</h1>
+    <form style=>
+        <input type="text" id="u3">
+        <select id="sel3" name="sel3"> 
+            <option value="Feet">Feet</option>
+            <option value="Inch">Inch</option>
+            <option value="Meter">Meter</option>
+        </select>
+
+        <label for="conversion">=</label>
+
+        <input id="u4" value>
+        <select id="sel4" name="sel4">
+            <option value="Feet">Feet</option>
+            <option value="Inch">Inch</option>
+            <option value="Meter">Meter</option>
+    
+        </select>
+    </form>
+    
     <h1>Unit Conversion Calculator - Length</h1>
     <form>
         <input type="text" id="u1">
@@ -26,18 +47,79 @@
         <button type="button" id="conv">Convert</button>
     </form>
 
+    
+
     <script>
         document.getElementById('conv').addEventListener('click', Calc);
         function Calc(){
-            var i1 = document.getElementById('u1').value;
+            var i1 = parseFloat(document.getElementById('u1').value);
             var s1 = document.getElementById('sel1').value;
             var s2 = document.getElementById('sel2').value;
-            var i2 = document.getElementById('u2').value;
+            var i2 = parseFloat(document.getElementById('u2').value);
 
+            if(s1 == "Inch" && s2 == "Meter"){
+                document.getElementById('u2').value = u1;
+            }
             if(s1 == "Feet" && s2 == "Meter"){
                 var x = i1/3.281;
-                i2.setAttribute('value',x);
+                document.getElementById('u2').value = x;
             }
+            if(s1 == "Meter" && s2 == "Feet"){
+                var x = i1*3.281;
+                document.getElementById('u2').value = x;
+            }
+            if(s1 == "Feet" && s2 == "Inch"){
+                var x = i1*12;
+                document.getElementById('u2').value = x;
+            }
+            if(s1 == "Inch" && s2 == "Feet"){
+                var x = i1/12;
+                document.getElementById('u2').value = x;
+            }
+            if(s1 == "Inch" && s2 == "Meter"){
+                var x = i1/39.370;
+                document.getElementById('u2').value = x;
+            }
+            if(s1 == "Meter" && s2 == "Inch"){
+                var x = i1*39.370;
+                document.getElementById('u2').value = x;
+            }
+
+            /*----------------------------------------------------------------*/
+
+            var i3 = parseFloat(document.getElementById('u3').value);
+            var s3 = document.getElementById('sel3').value;
+            var s4 = document.getElementById('sel4').value;
+            var i4 = parseFloat(document.getElementById('u4').value);
+
+            if(s3 == "Inch" && s4 == "Meter"){
+                document.getElementById('u4').value = u1;
+            }
+            if(s3 == "Feet" && s4 == "Meter"){
+                var x = i3/3.281;
+                document.getElementById('u4').value = x;
+            }
+            if(s3 == "Meter" && s4 == "Feet"){
+                var x = i3*3.281;
+                document.getElementById('u4').value = x;
+            }
+            if(s3 == "Feet" && s4 == "Inch"){
+                var x = i3*12;
+                document.getElementById('u4').value = x;
+            }
+            if(s3 == "Inch" && s4 == "Feet"){
+                var x = i3/12;
+                document.getElementById('u4').value = x;
+            }
+            if(s3 == "Inch" && s4 == "Meter"){
+                var x = i3/39.370;
+                document.getElementById('u4').value = x;
+            }
+            if(s3 == "Meter" && s4 == "Inch"){
+                var x = i3*39.370;
+                document.getElementById('u4').value = x;
+            }
+
         }
     </script>
     
