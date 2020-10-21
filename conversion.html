@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head><title>Unit Converter</title></head>
+
+<body>
+    <h1>Unit Conversion Calculator - Length</h1>
+    <form>
+        <input type="text" id="u1">
+        <select id="sel1" name="sel1"> 
+            <option value="Feet">Feet</option>
+            <option value="Inch">Inch</option>
+            <option value="Meter">Meter</option>
+        </select>
+
+        <label for="conversion">=</label>
+
+        <input id="u2" value>
+        <select id="sel2" name="sel2">
+            <option value="Feet">Feet</option>
+            <option value="Inch">Inch</option>
+            <option value="Meter">Meter</option>
+ 
+        </select>
+        <button type="button" id="conv">Convert</button>
+    </form>
+
+    <script>
+        document.getElementById('conv').addEventListener('click', Calc);
+        function Calc(){
+            var i1 = document.getElementById('u1').value;
+            var s1 = document.getElementById('sel1').value;
+            var s2 = document.getElementById('sel2').value;
+            var i2 = document.getElementById('u2').value;
+
+            if(s1 == "Feet" && s2 == "Meter"){
+                var x = i1/3.281;
+                i2.setAttribute('value',x);
+            }
+        }
+    </script>
+    
+    
+</body>
+
+</html>
