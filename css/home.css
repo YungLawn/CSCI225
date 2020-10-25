@@ -15,14 +15,18 @@
 	*/
 
 	/* 1 Color */
-	html{
+	/* html{
 		background: repeating-linear-gradient(127deg, rgb(0,191,255), rgb(230,230,250), rgb(135,206,235),
 		rgb(230,230,250), rgb(0,191,255));
 		
-	}
+	} */
 
 	div.navbar{
 		background: repeating-linear-gradient(70deg, rgb(0,191,255), rgb(230,230,250), rgb(0,191,255));
+	}
+
+	footer{
+		background-color: aquamarine;
 	}
 	
 	/* 2 Typography */
@@ -49,6 +53,31 @@
 
 	html{
 		font-family: 'Sansita Swashed', cursive;
+	}
+
+	h1{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+	li{
+		font-weight: bold;
+		color: rgb(58, 199, 218);
+	}
+	
+	p{
+		line-height: 23px;
+		
+	}
+	a{
+		text-decoration: none;
+		color: navy
+	}
+	a:hover{
+		color: red;
+	}
+
+	p::first-letter{
+		font-size: 200%;
 	}
 
 
@@ -188,13 +217,21 @@
 
 	/* 4 Other Decorations */
 
+	body{
+		background-image: url(../img/background.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+
 	div.Introduction h1{
 		border-radius: 50px 20px;
 		background-color: rgb(240,234,213);
 		box-shadow: -7px -7px 7px dimgray;
-		width:240px;
+		width:330px;
 		height:50px;
 		text-align: center;
+		border-radius: 50px 50px;
 	}
 
 	div.Introduction{
@@ -223,9 +260,10 @@
 		border-radius: 20px 50px;
 		background-color: rgb(240,234,213);
 		box-shadow: -7px -7px 7px dimgray;
-		width:190px;
+		width:220px;
 		height:50px;
 		text-align: center;
+		border-radius: 50px 50px;
 	}
 
 	div.Portfolio{
@@ -235,15 +273,18 @@
 		width:600px;
 		height:330px;
 		padding-right: 10px;
+		border-right: 3px solid #fff;
+		border-bottom: 3px solid #fff;
 	}
 
 	div.Schedule h1{
 		border-radius: 50px 20px;
 		background-color: rgb(240,234,213);
 		box-shadow: -7px -7px 7px dimgray;
-		width:190px;
+		width:220px;
 		height:50px;
 		text-align: center;
+		border-radius: 50px 50px;
 	}
 
 	div.Schedule{
@@ -254,6 +295,8 @@
 		height:420px;
 		padding-left: 20px;
 		padding-top: 10px;
+		border-right: 3px solid #fff;
+		border-bottom: 3px solid #fff;
 	}
 
 	#tbl tr th, td{
@@ -261,15 +304,24 @@
 		padding: 3px;
 		text-align: center;
 		border-radius: 5px;
+		vertical-align: 0%;
+		empty-cells: hide;
 	}
+
+	#tbl tr th, td:nth-child(even){
+		background-color: cornflowerblue;
+	}
+	
+	
 
 	div.Contact h1{
 		border-radius: 50px 20px;
 		background-color: rgb(240,234,213);
 		box-shadow: -7px -7px 7px dimgray;
-		width:240px;
+		width:320px;
 		height:100px;
 		text-align: center;
+		border-radius: 50px 50px;
 	}
 
 	div.Contact{
@@ -279,15 +331,18 @@
 		width:330px;
 		height:70px;
 		padding-bottom: 20px;
+		border-right: 3px solid #fff;
+		border-bottom: 3px solid #fff;
 	}
 
 	div.Assignment h1{
 		border-radius: 20px 50px;
 		background-color: rgb(240,234,213);
 		box-shadow: -7px -7px 7px dimgray;
-		width:240px;
+		width:270px;
 		height:50px;
 		text-align: center;
+		border-radius: 50px 50px;
 	}
 
 	div.Assignment{
