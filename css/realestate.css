@@ -1,0 +1,85 @@
+/* 
+    CSS Stylesheet for realestate.html
+    Written By Chris Teelon
+    Last updated on: 10/30/2020
+*/
+
+table{
+    background-color: rgba(100, 89, 77, 0.9);
+    color: #fff;
+}
+
+table *{
+    border: 2px solid black;
+}
+
+#inputarea{
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    width: 500px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 50px 20px;
+    border: 10px solid  rgb(10, 8, 117);
+    display: block;
+    text-align: center;
+}
+
+#finput{
+    display: inline-block;
+    margin: 0% auto;
+    text-align: center;
+}
+
+#inputarea{  /*Color*/
+    background-color: rgba(27, 230, 230, 0.5);
+}
+
+button{
+    position: absolute;
+    padding:10px;
+    border:none;
+    background-color:#3F51B5;
+    color:#fff;
+    font-weight:600;
+    border-radius:5px;
+    width:90%;
+    bottom: 30px;
+    left: 23px;
+}
+
+button:hover{
+border: 2px solid rgb(10, 8, 117);
+}
+
+input{
+    width: 300px;
+    height: 50px;
+    font-size: 150%;
+}
+
+input:hover{
+    border: 2px solid rgb(10, 8, 117);
+}
+
+label{
+    font-size: 120%;
+}
+
+select{
+    width: 150px;
+    height: 30px;
+}
+
+select:hover{
+border: 2px solid rgb(10, 8, 117);
+}
+
+body{
+    background-image: url(../img/realestate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
