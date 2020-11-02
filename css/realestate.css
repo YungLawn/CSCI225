@@ -4,13 +4,54 @@
     Last updated on: 10/30/2020
 */
 
+#loanamount{
+    position: absolute;
+    top: 40px;
+    right: 45px;
+}
+
+#intRate{
+    position: absolute;
+    top: 140px;
+    right: 40px;
+}
+
+#Term{
+    position: absolute;
+    top: 240px;
+    right: 20px;
+}
+
+#Time{
+    position: absolute;
+    bottom: 110px;
+}
+
 table{
     background-color: rgba(100, 89, 77, 0.9);
     color: #fff;
+    width: 600px;
+}
+
+table tr th, td:nth-child(1){
+    background-color: rgba(160, 106, 48);
+}
+
+
+#monthlypay{
+    color: #fff;
+    font-size: large;
 }
 
 table *{
     border: 2px solid black;
+    padding: 3px;
+    text-align: center;
+    font-size: large;
+}
+
+#finput{
+    color: #fff;
 }
 
 #inputarea{
@@ -18,30 +59,22 @@ table *{
     top: 20%;
     right: 20%;
     width: 500px;
-    height: 600px;
+    height: 500px;
     box-sizing: border-box;
     padding: 20px;
     border-radius: 50px 20px;
-    border: 10px solid  rgb(10, 8, 117);
-    display: block;
-    text-align: center;
-}
-
-#finput{
-    display: inline-block;
-    margin: 0% auto;
-    text-align: center;
+    border: 10px solid  rgba(160, 106, 48);
 }
 
 #inputarea{  /*Color*/
-    background-color: rgba(27, 230, 230, 0.5);
+    background-color: rgba(100, 89, 77, 0.9);
 }
 
 button{
     position: absolute;
     padding:10px;
     border:none;
-    background-color:#3F51B5;
+    background-color:rgba(160, 106, 48);
     color:#fff;
     font-weight:600;
     border-radius:5px;
@@ -51,7 +84,7 @@ button{
 }
 
 button:hover{
-border: 2px solid rgb(10, 8, 117);
+border: 2px solid #fff;
 }
 
 input{
@@ -61,7 +94,7 @@ input{
 }
 
 input:hover{
-    border: 2px solid rgb(10, 8, 117);
+    border: 4px solid rgba(160, 106, 48);
 }
 
 label{
@@ -74,7 +107,7 @@ select{
 }
 
 select:hover{
-border: 2px solid rgb(10, 8, 117);
+border: 4px solid rgba(160, 106, 48);
 }
 
 body{
