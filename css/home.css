@@ -312,8 +312,6 @@
 		background-color: cornflowerblue;
 	}
 	
-	
-
 	div.Contact h1{
 		border-radius: 50px 20px;
 		background-color: rgb(240,234,213);
@@ -350,7 +348,7 @@
 		background-color: rgb(240,234,213);
 		box-shadow: -7px -7px 7px dimgray;
 		width:180px;
-		height:70px;
+		height:120px;
 		padding-bottom: 20px;
 	}
 
