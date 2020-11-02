@@ -83,6 +83,10 @@
 
 	/* 3 Layout */
 
+	html{
+		zoom: 90%;
+	}
+
 	div.navbar{
 		position: fixed;
 		top: 0px;
