@@ -236,8 +236,7 @@ firebase.initializeApp(firebaseConfig);
 function save(){
     var data = document.querySelector("#name").value;
     console.log(data);
-    inputJson = {"name":data};
-    inputJson = {"time": seconds};
+    inputJson = {"name":data, "time": seconds};
 
     firebase
     .firestore()
