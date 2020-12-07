@@ -1,0 +1,105 @@
+/* Created By Matthew Russell*/
+.TTT{
+    text-align: center;
+    font-size: 30px;
+}
+
+.blue{
+    /* color: blue; */
+    /* background-color: blue; */
+    width: 10%;
+    border: 1px solid black;
+    background-color: rgba(28, 207, 219, 0.575);
+    color: rgba(22, 25, 204, 0.0);
+    outline: solid 5px blue;
+    border: solid 2px blue;
+}
+.red{
+    width: 10%;
+    border: 1px solid black;
+    background-color: rgba(184, 20, 20, 0.575);
+    color: rgba(22, 25, 204, 0.0);
+    outline: solid 5px red;
+    border: solid 2px red;
+}
+
+/* ADDED BY CHRIS TEELON DURING IMPLEMENTATION */
+
+.TTT{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    height: 500px;
+    width: 500px;
+    /* background-color:#fff; */
+}
+
+#reset{
+    position: absolute;
+    bottom: 20%;
+    left: 35%;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    transition: all 0.7s ease;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#reset:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+    width: 250px;
+}
+
+#color{
+    position: absolute;
+    bottom: 20%;
+    right: 36%;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    transition: all 0.7s ease;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+
+#color:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+    width: 250px;
+}
+
+#start{
+    position: absolute;
+    bottom: 10%;
+    left: 36.5%;
+    width: 450px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    transition: all 0.7s ease;
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+}
+
+#start:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+}
+
+
+body{
+    background-image: url(img/videogamesunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

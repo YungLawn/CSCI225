@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created by Matthew Russell -->
+<head>
+    <link rel="stylesheet" href="TTT.css">
+</head>
+
+<body>
+    <div id="TTT">
+        <table class="TTT">
+            <tr>
+                <td id="0" class="red" onclick="clicked(0)">1</td>
+                <td id="1" class="red" onclick="clicked(1)">1</td>
+                <td id="2" class="red" onclick="clicked(2)">1</td>
+            </tr>
+            <tr>
+                <td id="3" class="red" onclick="clicked(3)">1</td>
+                <td id="4" class="red" onclick="clicked(4)">1</td>
+                <td id="5" class="red" onclick="clicked(5)">1</td>
+            </tr>
+            <tr>
+                <td id="6" class="red" onclick="clicked(6)">1</td>
+                <td id="7" class="red" onclick="clicked(7)">1</td>
+                <td id="8" class="red" onclick="clicked(8)">1</td>
+            </tr>
+
+        </table>
+        <button id="reset" onClick="window.location.reload();">RESET</button> <!--id added by Chris Teelon during implementation-->
+        <button id="color" onclick="color()">Change Color</button>              <!--id added by Chris Teelon during implementation-->
+        <button id="start">Start Game</button>
+    </div>
+    
+    <div id="timer">
+        <h1><time>00:00:00</time></h1>
+    </div>
+
+    <script src="TTT.js">
+    
+</body>
+
+</html>

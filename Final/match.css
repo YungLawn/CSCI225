@@ -1,0 +1,116 @@
+/* Created by Matthew Russell */
+#i0{visibility: visible; }
+#i1{visibility: visible; }
+#i2{visibility: visible; }
+#i3{visibility: visible; }
+#i4{visibility: visible; }
+#i5{visibility: visible; }
+#i6{visibility: visible; }
+#i7{visibility: visible; }
+#i8{visibility: visible; }
+#i9{visibility: visible; }
+#i10{visibility: visible; }
+#i11{visibility: visible; }
+
+#m{background-color: deepskyblue;
+    background-position: center;
+    background-size: contain;
+    width: 1%;
+    background-repeat: no-repeat;
+}
+.match{
+    width: 1%;
+}
+
+#match{
+    position: absolute;
+    left: 30%;
+}
+
+body{
+    background-image: url(img/videogamesunset.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* ADDED BY CHRIS TEELON DURING IMPLEMENTATION */
+
+#start{
+    position: absolute;
+    top: 27%;
+    left: 20%;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    transition: all 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#start:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+    width: 400px;
+}
+
+#reset{
+    position: absolute;
+    top: 67%;
+    left: 20%;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    transition: all 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#reset:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+    width: 400px;
+}
+
+#color{
+    position: absolute;
+    top: 47%;
+    left: 20%;
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    transition: all 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#color:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+    width: 400px;
+}
+
+#match{
+    position: absolute;
+    left: 50%;
+    top: 12%;
+    height: 600px;
+    width: 600px;
+    background-color: aquamarine;
+}
+
+#matchTable{
+    position: absolute;
+    left: 1.7%;
+    bottom: 1.4%;
+    
+}

@@ -1,0 +1,45 @@
+<!-- Author: Chris Teelon -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> <title>Final Project</title>
+    <link rel="stylesheet" href="final.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <body>
+        <script src="final.js"></script>
+
+        <div id="wrapper">
+
+            <div id="heading">
+                <h1 id="selectagame">Select a Game</h1>
+            </div>
+            
+            <div id="buttons">
+                <form>
+                    <button type="submit" formaction="GameOne.html"
+                     onmouseover="mshow()" onmouseout="mhide()" id="GameOne" class="GameOne"></button>
+                    <button type="submit" formaction="GameTwo.html"
+                     onmouseover="tttshow()" onmouseout="ttthide()" id="GameTwo" class="GameTwo"></button>
+                </form>
+            </div>
+        </div>
+
+        <div id="matchdir" class="matchd">Matching Game
+            <ul id="mtchlist">
+                <li>Test Your Memory!</li>
+                <li>Flip the tiles to find matches.</li>
+                <li>Find all the matching tiles to win!</li>
+            </ul>
+        </div>
+
+        <div id="tttdir" class="tttd">TicTacToe
+            <ul id="tttlist">
+                <li>The orginal strategy game!</li>
+                <li>Click tiles to lock in your move.</li>
+            </ul>
+        </div>
+
+    </body>
+
+</html>

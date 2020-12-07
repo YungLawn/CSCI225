@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Created by Matthew Russell -->
+<head>
+    <link rel="stylesheet" href="match.css">
+</head>
+
+<body>
+
+    <div id="match">
+        <table id="matchTable" class="match">
+            <tr>
+                <td id="m" onclick="match('i0',0)"><img id="i0" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i1',1)"><img id="i1" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i2',2)"><img id="i2" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i3',3)"><img id="i3" class="img" src="" alt=""></td>
+                
+            </tr>
+            <tr>
+                <td id="m" onclick="match('i4',4)"><img id="i4" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i5',5)"><img id="i5" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i6',6)"><img id="i6" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i7',7)"><img id="i7" class="img" src="" alt=""></td>
+                
+            </tr>
+            <tr>
+                <td id="m" onclick="match('i8',8)"><img id="i8" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i9',9)"><img id="i9" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i10',10)"><img id="i10" class="img" src="" alt=""></td>
+                <td id="m" onclick="match('i11',11)"><img id="i11" class="img" src="" alt=""></td>
+                
+            </tr>
+
+        </table>
+
+    </div>
+
+    <button id="reset" onClick="window.location.reload();">RESET</button>
+    <button id="start" type="button" onclick="ranimg(),setTimeout(show, 3000)">START GAME</button>
+    <button id="color" onclick="Mcolor()">Change Color</button>
+
+    <script src="match.js">
+    </script>
+</body>
+
+
+
+</html>
