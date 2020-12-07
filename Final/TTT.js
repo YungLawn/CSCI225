@@ -237,6 +237,7 @@ function save(){
     var data = document.querySelector("#name").value;
     console.log(data);
     inputJson = {"name":data};
+    inputJson = {"time": seconds};
 
     firebase
     .firestore()
