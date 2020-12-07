@@ -242,4 +242,7 @@ function save(){
     .firestore()
     .collection("TicTacToe")
     .add(inputJson);
+
+    console.log(inputJson);
+    console.log("saved");
 }
