@@ -235,5 +235,10 @@ function color() {
 function save(){
     var data = document.querySelector("#name").value;
     console.log(data);
+    inputJson = {"name":data};
 
+    firebase
+    .firestore()
+    .collection("TicTacToe")
+    .add(inputJson);
 }
