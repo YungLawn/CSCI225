@@ -1,6 +1,6 @@
 {
-  "name": "workspacecss-2020",
+  "name": "CSCI225",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {}
 }
