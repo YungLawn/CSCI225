@@ -127,4 +127,9 @@ function Mcolor(){
         cc=0;
     }
     
+} 
+
+function save(){
+    var data = document.querySelector("#name").value;
+    console.log(data);
 }
