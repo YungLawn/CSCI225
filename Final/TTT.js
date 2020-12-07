@@ -38,6 +38,7 @@ start.onclick = timer;
 function stopTimer() {
     clearTimeout(t);
     showSeconds();
+    document.getElementById("tttsignin").style.display = 'block';
 }
 //--------------------------------------------------------------------------------------------
 

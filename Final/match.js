@@ -104,6 +104,7 @@ function showmatches(){
     if(matches == 6){
         window.alert("You have matched all of the reamining cards, YOU WIN!!!");
         console.log("moves: " + moves);
+        document.getElementById("matchsignin").style.display = 'block';
     }
 }
 function Mcolor(){
@@ -144,4 +145,10 @@ firebase.initializeApp(firebaseConfig);
 function save(){
     var data = document.querySelector("#name").value;
     console.log(data);
+    inputJson = {"name":data, "moves": moves};
+
+    firebase
+    .firestore()
+    .collection("Matching")
+    .add(inputJson);
 }

@@ -114,3 +114,29 @@ body{
     bottom: 1.4%;
     
 }
+
+#matchsignin{
+    position: absolute;
+    height: 700px;
+    width: 1200px;
+    background-color: rgba(28, 204, 22, 0.815);
+    top: 8%;
+    left: 18%;
+
+}
+
+#name{
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    top: 30%;
+    right: 30%;
+}
+
+#signin{
+    position: absolute;
+    height: 50px;
+    width: 300px;
+    top: 70%;
+    right: 30%;
+}
