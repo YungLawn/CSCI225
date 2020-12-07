@@ -211,6 +211,16 @@ function WinORLose() {
     }
 }
 
+
+function color() {
+    if(document.getElementById(0).className == "blue"){
+    for(var i = 0; i<=8;i++){
+    document.getElementById(i).setAttribute("class","red");}}
+    else{
+        for(var i = 0; i<=8;i++){
+        document.getElementById(i).setAttribute("class","blue");}}
+}
+
 var firebaseConfig = {
     apiKey: "AIzaSyDaq17_jm_sBe6XEffuf8uye6wXoq5WgYQ",
     authDomain: "final-project-660e8.firebaseapp.com",
@@ -222,15 +232,6 @@ var firebaseConfig = {
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
-
-function color() {
-    if(document.getElementById(0).className == "blue"){
-    for(var i = 0; i<=8;i++){
-    document.getElementById(i).setAttribute("class","red");}}
-    else{
-        for(var i = 0; i<=8;i++){
-        document.getElementById(i).setAttribute("class","blue");}}
-}
 
 function save(){
     var data = document.querySelector("#name").value;
