@@ -27,14 +27,14 @@
     left: 30%;
 }
 
+
+/* ADDED BY CHRIS TEELON DURING IMPLEMENTATION */
 body{
     background-image: url(img/videogamesunset.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
-
-/* ADDED BY CHRIS TEELON DURING IMPLEMENTATION */
 
 html{
     font-family: 'VT323', monospace;
@@ -125,7 +125,7 @@ html{
     position: absolute;
     left: 1.7%;
     bottom: 1.4%;
-    
+    visibility: hidden;
 }
 
 #matchsignin{

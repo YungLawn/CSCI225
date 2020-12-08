@@ -40,7 +40,7 @@
     </div>
 
     <button id="reset" onClick="resetpage()">RESET</button>
-    <button id="start" type="button" onclick="ranimg(),setTimeout(show, 3000)">START GAME</button>
+    <button id="start" type="button" onclick="ranimg(),setTimeout(show, 3000),showGame()">START GAME</button>
     <button id="color" onclick="Mcolor()">Change Color</button>
 
     <div id="matchsignin" style="display: none;">
@@ -52,6 +52,10 @@
     <script>
         function resetpage(){
             window.location.reload();
+        }
+
+        function showGame(){
+            document.getElementById("matchTable").style.visibility = "visible";
         }
     </script>
 
