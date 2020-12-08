@@ -110,18 +110,18 @@ function showmatches(){
 function Mcolor(){
     cc++;
     if(cc==1){
-        color = "yellow";
+        color = "rgb(255, 223, 0)";
         for(var i = 0;i<=11;i++){
         document.getElementsByTagName("TD")[i].style.backgroundColor = color;
     }}
     if(cc==2){
-        color = "green"
+        color = "rgb(13, 141, 62)"
         for(var i = 0;i<=11;i++){
             document.getElementsByTagName("TD")[i].style.backgroundColor = color;
         }
     }
         if(cc==3){
-        color = "red"
+        color = "rgb(133, 60, 60)"
         for(var i = 0;i<=11;i++){
             document.getElementsByTagName("TD")[i].style.backgroundColor = color;
         }

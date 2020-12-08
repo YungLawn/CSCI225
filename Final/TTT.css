@@ -25,6 +25,11 @@
 
 /* ADDED BY CHRIS TEELON DURING IMPLEMENTATION */
 
+html{
+    font-family: 'VT323', monospace;
+    color: #fff;
+}
+
 .TTT{
     position: absolute;
     top: 10%;
@@ -35,6 +40,8 @@
 }
 
 #reset{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     bottom: 20%;
     left: 35%;
@@ -56,6 +63,8 @@
 }
 
 #color{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     bottom: 20%;
     right: 36%;
@@ -77,6 +86,8 @@
 }
 
 #start{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     bottom: 10%;
     left: 36.5%;
@@ -108,24 +119,42 @@ body{
     position: absolute;
     height: 700px;
     width: 700px;
-    background-color: rgba(28, 204, 22, 0.815);
+    background-color: rgba(107, 22, 204, 0.801);
+    outline: 5px solid rgb(22, 25, 204);
     top: 8%;
     left: 29%;
-
 }
 
 #name{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     height: 50px;
     width: 300px;
     top: 30%;
     right: 30%;
+    border: solid 2px rgba(22, 25, 204, 0.815);
 }
 
 #signin{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     height: 50px;
     width: 300px;
     top: 70%;
     right: 30%;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    color: #fff;
+    transition: all 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#signin:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+    height: 75px;
 }

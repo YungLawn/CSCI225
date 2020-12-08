@@ -12,7 +12,7 @@
 #i10{visibility: visible; }
 #i11{visibility: visible; }
 
-#m{background-color: deepskyblue;
+#m{background-color: rgb(255, 223, 0);
     background-position: center;
     background-size: contain;
     width: 1%;
@@ -36,7 +36,14 @@ body{
 
 /* ADDED BY CHRIS TEELON DURING IMPLEMENTATION */
 
+html{
+    font-family: 'VT323', monospace;
+    color: #fff;
+}
+
 #start{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     top: 27%;
     left: 20%;
@@ -58,6 +65,8 @@ body{
 }
 
 #reset{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     top: 67%;
     left: 20%;
@@ -79,6 +88,8 @@ body{
 }
 
 #color{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     top: 47%;
     left: 20%;
@@ -105,7 +116,9 @@ body{
     top: 12%;
     height: 600px;
     width: 600px;
-    background-color: aquamarine;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
 }
 
 #matchTable{
@@ -119,24 +132,47 @@ body{
     position: absolute;
     height: 700px;
     width: 1200px;
-    background-color: rgba(28, 204, 22, 0.815);
+    background-color: rgba(107, 22, 204, 0.801);
+    outline: 5px solid rgb(22, 25, 204);
     top: 8%;
     left: 18%;
 
 }
 
 #name{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     height: 50px;
     width: 300px;
     top: 30%;
-    right: 30%;
+    right: 35%;
+    border: solid 2px rgba(22, 25, 204, 0.815);
 }
 
 #signin{
+    font-family: 'VT323', monospace;
+    font-size: 120%;
     position: absolute;
     height: 50px;
     width: 300px;
     top: 70%;
-    right: 30%;
+    right: 35.5%;
+    background-color: rgba(22, 25, 204, 0.575);
+    outline: solid 5px rgba(22, 25, 204, 0.815);
+    border: solid 2px rgba(22, 25, 204, 0.815);
+    color: #fff;
+    transition: all 0.5s ease;
+    background-repeat: no-repeat;
+    background-position: 100%;
+}
+
+#signin:hover{
+    outline: solid 15px rgba(22, 25, 204, 0.815);
+    background-color: rgb(22, 25, 204, 0.815);
+    height: 75px;
+}
+
+#matchTable tr td{
+    outline: solid 5px rgba(22, 25, 204, 0.815);
 }

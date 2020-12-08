@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="match.css">
 </head>
 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+</style>
+
 <body>
 
     <div id="match">
@@ -35,15 +39,21 @@
 
     </div>
 
-    <button id="reset" onClick="window.location.reload();">RESET</button>
+    <button id="reset" onClick="resetpage()">RESET</button>
     <button id="start" type="button" onclick="ranimg(),setTimeout(show, 3000)">START GAME</button>
     <button id="color" onclick="Mcolor()">Change Color</button>
 
     <div id="matchsignin" style="display: none;">
         <form id="signinform" action=""></form>
-        <input id="name" type="text" placeholder="Enter Your Name">
-        <button onclick="save()" id="signin" type="submit"></button>
+        <input id="name" type="text" placeholder="Enter Your Name to Save Score">
+        <button onclick="save(), setInterval(resetpage,1000)" id="signin" type="submit">SAVE</button>
     </div>
+
+    <script>
+        function resetpage(){
+            window.location.reload();
+        }
+    </script>
 
     
 

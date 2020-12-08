@@ -5,6 +5,10 @@
     <link rel="stylesheet" href="TTT.css">
 </head>
 
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+</style>
+
 <body>
 
     <div id="TTT">
@@ -26,7 +30,7 @@
             </tr>
 
         </table>
-        <button id="reset" onClick="window.location.reload();">RESET</button> <!--id added by Chris Teelon during implementation-->
+        <button id="reset" onClick="resetpage()">RESET</button> <!--id added by Chris Teelon during implementation-->
         <button id="color" onclick="color()">Change Color</button>              <!--id added by Chris Teelon during implementation-->
         <button id="start">Start Game</button>
     </div>
@@ -37,9 +41,15 @@
 
     <div id="tttsignin" style="display: none;">
         <form class="signin" id="signinform" action=""></form>
-        <input id="name" type="text" placeholder="Enter Your Name">
-        <button onclick="save()" id="signin" type="submit">SAVE</button>
+        <input id="name" type="text" placeholder="Enter Your Name to Save Score">
+        <button onclick="save(), setTimeout(resetpage,1000)" id="signin" type="submit">SAVE</button>
     </div>
+
+    <script>
+        function resetpage(){
+            window.location.reload();
+        }
+    </script>
 
 
 <!-- The core Firebase JS SDK is always required and must be listed first -->
