@@ -19,8 +19,8 @@
     border: 1px solid black;
     background-color: rgba(184, 20, 20, 0.575);
     color: rgba(22, 25, 204, 0.0);
-    outline: solid 5px red;
-    border: solid 2px red;
+    outline: solid 5px rgb(94, 7, 7);
+    border: solid 2px rgb(94, 7, 7);
 }
 
 /* ADDED BY CHRIS TEELON DURING IMPLEMENTATION */
