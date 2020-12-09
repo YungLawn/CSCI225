@@ -4,12 +4,14 @@
 <!-- Created by Matthew Russell -->
 <head>
     <title>Matching Game</title>
-    
+
     <link rel="stylesheet" href="match.css">
 
+<!-- ADDED BY CHRIS TEELON -->
 <style>
     @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 </style>
+<!-- ------------------------- -->
 
 <body>
 
@@ -45,13 +47,14 @@
     <button id="start" type="button" onclick="ranimg(),setTimeout(show, 3000),showGame()">START GAME</button>
     <button id="color" onclick="Mcolor()">Change Color</button>
 
+    <!-- ADDED BY CHRIS TEELON DURING IMPLENTATION -->
+
     <div id="matchsignin" style="display: none;">
         <form id="signinform" action=""></form>
         <input id="name" type="text" placeholder="Enter Your Name to Save Score">
         <button onclick="save(), setInterval(resetpage,1000)" id="signin" type="submit">SAVE</button>
     </div>
-
-    <!-- ADDED BY CHRIS TEELON DURING IMPLENTATION -->
+    
     <script>    
         function resetpage(){
             window.location.reload();

@@ -130,6 +130,9 @@ function Mcolor(){
     
 } 
 
+
+// ADDED BY CHRIS TEELON
+
 var firebaseConfig = {
     apiKey: "AIzaSyDaq17_jm_sBe6XEffuf8uye6wXoq5WgYQ",
     authDomain: "final-project-660e8.firebaseapp.com",

@@ -222,6 +222,7 @@ function color() {
         document.getElementById(i).setAttribute("class","blue");}}
 }
 
+// ADDED BY CHRIS TEELON 
 var firebaseConfig = {
     apiKey: "AIzaSyDaq17_jm_sBe6XEffuf8uye6wXoq5WgYQ",
     authDomain: "final-project-660e8.firebaseapp.com",
@@ -231,6 +232,7 @@ var firebaseConfig = {
     appId: "1:798331069936:web:a6b7fa5b75cacef8dca935",
     measurementId: "G-NBT3QYCHDR"
 };
+
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
 
