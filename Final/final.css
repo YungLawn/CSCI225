@@ -4,15 +4,15 @@
 
 #intro{
     position: absolute;
-    width: 200px;
-    height: 300px;
+    width: 250px;
+    height: 400px;
     background-color: rgba(22, 25, 204, 0.575);
     outline: solid 5px rgba(22, 25, 204, 0.815);
     border: solid 2px rgba(22, 25, 204, 0.815);
     color: #fff;
     top: 30%;
-    right: 44%;
-    
+    right: 42.5%;
+
 }
 
 html{
