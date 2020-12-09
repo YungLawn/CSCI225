@@ -1,48 +1,3 @@
-//ADDED BY CHRIS TEELON DURING IMPLENTATION
-
-var h1 = document.getElementsByTagName('h1')[0],
-    start = document.getElementById('start'),
-    stop = document.getElementById('stop'),
-    clear = document.getElementById('clear'),
-    seconds = 0, minutes = 0, hours = 0,
-    t;
-
-function add() {
-    seconds++;
-    if (seconds >= 60) {
-        seconds = 0;
-        minutes++;
-        if (minutes >= 60) {
-            minutes = 0;
-            hours++;
-        }
-    }
-    
-    h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
-
-    timer();
-}
-
-function showSeconds(){
-    console.log(seconds);
-}
-
-function timer() {
-    t = setTimeout(add, 1000);
-}
-
-// /* Start button */
-start.onclick = timer;
-
-// /* Stop button */
-function stopTimer() {
-    clearTimeout(t);
-    showSeconds();
-    document.getElementById("tttsignin").style.display = 'block';
-}
-//--------------------------------------------------------------------------------------------
-
-
 // CREATED BY MATTHEW RUSSELL
 
 
@@ -223,6 +178,47 @@ function color() {
 }
 
 // ADDED BY CHRIS TEELON 
+
+var h1 = document.getElementsByTagName('h1')[0],
+    start = document.getElementById('start'),
+    stop = document.getElementById('stop'),
+    clear = document.getElementById('clear'),
+    seconds = 0, minutes = 0, hours = 0,
+    t;
+
+function add() {
+    seconds++;
+    if (seconds >= 60) {
+        seconds = 0;
+        minutes++;
+        if (minutes >= 60) {
+            minutes = 0;
+            hours++;
+        }
+    }
+    
+    h1.textContent = (hours ? (hours > 9 ? hours : "0" + hours) : "00") + ":" + (minutes ? (minutes > 9 ? minutes : "0" + minutes) : "00") + ":" + (seconds > 9 ? seconds : "0" + seconds);
+
+    timer();
+}
+
+function showSeconds(){
+    console.log(seconds);
+}
+
+function timer() {
+    t = setTimeout(add, 1000);
+}
+
+start.onclick = timer;
+
+function stopTimer() {
+    clearTimeout(t);
+    showSeconds();
+    document.getElementById("tttsignin").style.display = 'block';
+}
+
+
 var firebaseConfig = {
     apiKey: "AIzaSyDaq17_jm_sBe6XEffuf8uye6wXoq5WgYQ",
     authDomain: "final-project-660e8.firebaseapp.com",
